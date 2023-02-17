@@ -1,0 +1,131 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem=10px*/
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+}
+/*Globales*/
+
+h1, h2, h3 { 
+    font-family: 'Playfair Display', serif;
+}
+
+h3{
+    font-size: 3rem;
+}
+a {
+    text-decoration: none;
+    columns: #000;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+/**Header en navegacion**/
+.nombre-sitio{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 4rem;
+
+}
+
+.nombre-sitio span{
+        color: #037bc0;
+}
+
+.contenedor-navegacion {
+    border-top: 1px solid #e1e1e1;
+}
+
+.nav-principal {
+/*        border-color: #e1e1e1;
+        border-top-style:solid;
+        border-width: 1px;
+*/
+        
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+
+}
+
+.hero {
+    background-image: url(../imagenes/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 55rem;
+}
+
+/*Categorias*/
+
+.categorias {
+    padding-top: 5rem;
+}
+
+.categorias h2{
+    text-align: center;
+}
+
+.categoria a {
+    text-align: center;
+    display:block;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.categoria a:hover{
+    background-color: #037bc0;
+    color: #fff;
+    border-bottom-right-radius: 1rem;
+}
+ .listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem;
+    
+    
+ }
+
+/*Bloque nosotros*/
+.sobre-nosotros {
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%,  #037bc0 100%), url(../imagenes/nosotros.jpg);
+    background-position: left center;
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+}
+
+.sobre-nosotros-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.texto-nosotros{
+    grid-column: 2 / 3;
+}
+/** Box Model 
+
+.sobre-nosotros{
+    background-color: red;
+    width: 200px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+**/
